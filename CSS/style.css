@@ -1,28 +1,36 @@
-        .logo_BINGO {
+:root{
+    ---color0:#ffffff;
+    ---color1:#148C32;
+    ---color2:#F2E527;
+}
+
+
+
+.logo_BINGO {
             margin: top 0.5EM;;
             padding: 2px;
             width: 6%;
             position:relative;
             align-content: center;
             size:20px 20px;            
-        }
+ }
         
-        .banner {
+.banner {
             margin-top: 0.5%;
             margin-bottom: 0.1%;
             align-items:flex-start;
             position:initial;
-            background-color: #148C32;
+            background-color: var(---color1);
             color: #ffffff;
             text-align:center;
             font-size: 5.5em;
             font-weight: 700;
             box-shadow: 0 4px 8px rgba(0,0,0,0.1);
             border-radius: 50px;
-        }
+}
             
 
-        body {
+body {
             font-family: 'Arial', sans-serif;
             display: flex;
             flex-direction:column;
@@ -30,13 +38,13 @@
             justify-content: flex-start;
             height: 100vh;
             margin: 0.1em;
-            background-color: #f0f0f0;
+            background-color: var(---color0);
             
-        }        
+ }        
 
-        .container {
+.container {
             text-align: center;
-            background-color: rgb(255, 255, 255);
+            background-color: var(---color0);
             padding: 25px;
             border-radius: 15px;
             box-shadow: 0 8px 16px rgba(0,0,0,0.1);
@@ -45,69 +53,69 @@
             display: flex;
             flex-direction: column;
             align-items: center;
-        }
+}
 
-        .bingo-board {
+.bingo-board {
             display: grid;
             grid-template-columns: repeat(16, 1fr);
             gap: 5px;
             margin: 0 auto;
             width: 100%;
-        }
+}
 
-        .bingo-header, .bingo-cell {
+.bingo-header, .bingo-cell {
             display: flex;
             justify-content: center;
             align-items: center;
             width: 100%;
             height: 80px;
             border: 2px solid #333;
-            background-color: #ffffff;
+            background-color: var(---color0);
             font-size: 1.5em;
             border-radius: 20px;
             transition: background-color 0.5s;
             cursor: pointer;
-        }
+}
 
-        .bingo-header {
-            background-color: #148C32;
+.bingo-header {
+            background-color: var(---color1);
             color: #ffffff;
             font-weight: bold;
             justify-content: center;
             
-        }
+}
 
-        .bingo-cell.marked {
-            background-color: #148C32;
+.bingo-cell.marked {
+            background-color: var(---color1);
             color: white;
             box-shadow: 0 4px 8px #3dff3d1a;
-        }
+}
 
-        .control-panel {
+.control-panel {
             display: flex;
             justify-content: space-between;
             align-items: center;
             margin: 20px 0;
             width: 100%;
             max-width: 1900px;
-        }
+}
 
-        .control-panel button {
-            background-color: #148C32;
-            color: white;
+.control-panel button {
+            background-color: var(---color1);
+            color: var(---color0);
             border: none;
             padding: 10px 20px;
             font-size: 1.2em;
             border-radius: 20px;
             cursor:pointer;
             transition: background-color 0.5s;
-        }
+}
 
-        .control-panel button:hover {
-            background-color: #F2E527;
-        }
+.control-panel button:hover {
+            background-color: var(---color2);
+}
 
-        .bingo-cell h4, .bingo-header h4 {
+.bingo-cell h4, .bingo-header h4 {
             margin: 0;
             font-size: 2em;
-        }
+}
